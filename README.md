@@ -1,4 +1,4 @@
-Tugas RSBK - JavaBeans Counter & ProgressBar <br>
+Tugas RSBK - Survey JPA <br>
 =========================================<br>
 Kelas B<br>
 Nobi Kharisma (21120117130048) <br>

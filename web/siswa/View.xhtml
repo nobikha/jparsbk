@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="Data Survey"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="ID"/>
+                    <h:outputText value=": #{siswaController.selected.id}" title="#{bundle.ViewSiswaTitle_id}"/>
+                    <h:outputText value="Nama Depan"/>
+                    <h:outputText value=": #{siswaController.selected.namaDepan}" title="#{bundle.ViewSiswaTitle_namaDepan}"/>
+                    <h:outputText value="Nama Belakang"/>
+                    <h:outputText value=": #{siswaController.selected.namaBelakang}" title="#{bundle.ViewSiswaTitle_namaBelakang}"/>
+                    <h:outputText value="Jenis Kelamin"/>
+                    <h:outputText value=": #{siswaController.selected.jenisKelamin}" title="#{bundle.ViewSiswaTitle_jenisKelamin}"/>
+                    <h:outputText value="Kelas"/>
+                    <h:outputText value=": #{siswaController.selected.kelas}" title="#{bundle.ViewSiswaTitle_kelas}"/>
+                    <h:outputText value="Nama Sekolah"/>
+                    <h:outputText value=": #{siswaController.selected.namaSekolah}" title="#{bundle.ViewSiswaTitle_namaSekolah}"/>
+                    <h:outputText value="Alamat"/>
+                    <h:outputText value=": #{siswaController.selected.alamat}" title="#{bundle.ViewSiswaTitle_alamat}"/>
+                    <h:outputText value="Telp."/>
+                    <h:outputText value=": #{siswaController.selected.telp}" title="#{bundle.ViewSiswaTitle_telp}"/>
+                    <h:outputText value="Email"/>
+                    <h:outputText value=": #{siswaController.selected.email}" title="#{bundle.ViewSiswaTitle_email}"/>
+                    </h:panelGrid>
+                    <br/>
+                    <h:panelGrid columns="1">
+                    <h:outputText value="Apakah setelah lulus Anda akan melanjutkan kuliah?"/>
+                    <h:outputText value="#{siswaController.selected.quest1}" title="#{bundle.ViewSiswaTitle_quest1}"/>
+                    <h:outputText value="Seberapa besar keinginan Anda untuk melanjutkan kuliah?"/>
+                    <h:outputText value="#{siswaController.selected.quest2}" title="#{bundle.ViewSiswaTitle_quest2}"/>
+                    <h:outputText value="Siapa yang memotivasi Anda untuk melanjutkan kuliah?"/>
+                    <h:outputText value="#{siswaController.selected.quest3}" title="#{bundle.ViewSiswaTitle_quest3}"/>
+                    <h:outputText value="Apakah Jurusan dan Perguruan Tinggi yang akan Anda pilih saat ini sudah sesuia dengan yang Anda inginkan?"/>
+                    <h:outputText value="#{siswaController.selected.quest4}" title="#{bundle.ViewSiswaTitle_quest4}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{siswaController.prepareList}" value="List Survey"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="Home"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

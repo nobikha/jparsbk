@@ -37,30 +37,30 @@
                     <h:inputText id="email" value="#{siswaController.selected.email}" title="#{bundle.CreateSiswaTitle_email}" />
                     </h:panelGrid>
                     <h:panelGrid columns="1">
-                    <h:outputLabel value="Apakah setelah lulus Anda akan melanjutkan kuliah?" for="quest1" />
+                    <h:outputLabel value="Apakah Anda suka bermain Game?" for="quest1" />
                     <h:selectOneMenu id="quest1" value="#{siswaController.selected.quest1}" title="#{bundle.CreateSiswaTitle_quest1}" >
                         <f:selectItem itemValue="Ya" itemLabel="Ya" />
 			<f:selectItem itemValue="Tidak" itemLabel="Tidak" />
                     </h:selectOneMenu>
-                    <h:outputLabel value="Seberapa besar keinginan Anda untuk melanjutkan kuliah?" for="quest2" />
+                    <h:outputLabel value="Seberapa sering Anda bermain game?" for="quest2" />
                     <h:selectOneMenu id="quest2" value="#{siswaController.selected.quest2}" title="#{bundle.CreateSiswaTitle_quest2}" >
-                        <f:selectItem itemValue="Sangat Tertarik" itemLabel="Sangat Tertarik" />
-			<f:selectItem itemValue="Cukup Tertarik" itemLabel="Cukup Tertarik" />
-                        <f:selectItem itemValue="Tidak Tertarik" itemLabel="Tidak Tertarik" />
+                        <f:selectItem itemValue="Sangat Sering" itemLabel="Sangat Sering" />
+			<f:selectItem itemValue="Cukup Sering" itemLabel="Cukup Sering" />
+                        <f:selectItem itemValue="Tidak Sering" itemLabel="Tidak Sering" />
                     </h:selectOneMenu>
-                    <h:outputLabel value="Siapa yang memotivasi Anda untuk melanjutkan kuliah?" for="quest3" />
+                    <h:outputLabel value="Jenis konsol game apa yang sering anda mainkan?" for="quest3" />
                     <h:selectOneMenu id="quest3" value="#{siswaController.selected.quest3}" title="#{bundle.CreateSiswaTitle_quest3}" >
-                        <f:selectItem itemValue="--" itemLabel="--" />
-                        <f:selectItem itemValue="Diri Sendiri" itemLabel="Diri Sendiri" />
-			<f:selectItem itemValue="Orang Tua" itemLabel="Orang tua" />
-                        <f:selectItem itemValue="Teman" itemLabel="Teman" />
-                        <f:selectItem itemValue="Lainnya" itemLabel="Lainnya" />
+                        <f:selectItem itemValue="Smartphone" itemLabel="Smartphone" />
+                        <f:selectItem itemValue="Play Station" itemLabel="Play Station" />
+			<f:selectItem itemValue="XBOX" itemLabel="XBOX" />
+                        <f:selectItem itemValue="Nintendo" itemLabel="Nintendo" />
+                        <f:selectItem itemValue="Arcade" itemLabel="Arcade" />
                     </h:selectOneMenu>
-                    <h:outputLabel value="Apakah Jurusan dan Perguruan Tinggi yang akan Anda pilih saat ini sudah sesuia dengan yang Anda inginkan?" for="quest4" />
+                    <h:outputLabel value="Konsol yang Anda miliki dari siapa?" for="quest4" />
                     <h:selectOneMenu id="quest4" value="#{siswaController.selected.quest4}" title="#{bundle.CreateSiswaTitle_quest4}" >
-                        <f:selectItem itemValue="--" itemLabel="--" />
-                        <f:selectItem itemValue="Sudah Sesuai" itemLabel="Sudah Sesuai" />
-			<f:selectItem itemValue="Tidak Sesuai" itemLabel="Tidak Sesuai" />
+                        <f:selectItem itemValue="Diri sendiri" itemLabel="Diri sendiri" />
+                        <f:selectItem itemValue="Orang Tua" itemLabel="Orang Tua" />
+			<f:selectItem itemValue="Orang Lain" itemLabel="Orang Lain" />
                     </h:selectOneMenu>
                     </h:panelGrid>
                 <br />
